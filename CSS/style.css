@@ -1,0 +1,124 @@
+/* Aqui começa as font family */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hammersmith+One&display=swap');
+/* Aqui termina as font family */
+/* Aqui começa o css rest */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Aqui termina o css reset */
+body {
+    width: 100%;
+    height: 350vh;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+/* Aqui começa a config da main */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}        
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+    z-index: 0;
+}
+/* Aqui começa a config do text em cima do vídeo da main */
+#title-main {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 30%; /* centralizado */
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    z-index: 1;
+    width: 90%;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+#title-main::after{
+    content: "|";
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+/* Aqui termina a config do text em cima do vídeo da main */
+/* Aqui começa a config do botão */
+.btn-main {
+    margin-top: 20%;
+    margin-right: 40%;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-family: "Hammersmith One", sans-serif;
+    color: #f5f5f5;
+    background: #1a1a1a;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.btn-main:hover {
+    background: #00d4ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 255, 234, 0.7);
+    color: #1a1a1a;
+}
+/* Aqui termina a config do botão */
+/* Aqui termina a config do vídeo da main */
+.icons {
+    font-family: "Abril Fatface", serif;    
+    position: absolute;
+    bottom: 50px;
+    margin-left: 90%;
+    transform: translateX(-50%);
+    gap: 90px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.icons i {
+    color: #f5f5f5;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+.icons i:hover {
+    transform: scale(1.2);
+    color: #00d4ff;
+}
