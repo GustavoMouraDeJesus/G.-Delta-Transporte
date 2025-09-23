@@ -1,6 +1,6 @@
 
 let h1 = document.getElementById("title-main");
-let firstText = "G. Delta Transportes";
+let firstText = "Gonçalves Transportes";
 let secondText = "A sua melhor opção!";
 
 function typeText(text, callback) {
@@ -39,3 +39,16 @@ function loopTexts() {
 }
 
 loopTexts();
+
+
+
+window.onload = function() {
+  if (window.location.hash === "#cards") {
+    history.replaceState(null, null, " ");
+    window.scrollTo(0, 0);
+  }
+};
+
+document.getElementById('scrollToCards').onclick = function() {
+  document.getElementById('cards').scrollIntoView({ behavior: 'smooth' });
+};

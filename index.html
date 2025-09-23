@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>G. Delta Transportes</title>
+    <link rel="icon" type="image/png" href="img/pequeno.png"/>
+    <title>Tr. Gonçalves</title>
 </head>
-<body>
-    <!-- Aqui começa a header -->
-     <!-- Aqui termina a header -->
+<body>      
+      <!-- Aqui começa a header -->
+        <header>
+          <img id="logo" src="img/caminhao.png" alt="Logo da página">
+          <nav id="links">
+          <a href="#">Início</a>
+          <a href="#">Caminhão</a>
+          <a href="#">Entrega</a>
+          <a href="#">Contato</a>
+        </nav>
+        </header>
+      <!-- Aqui termina a header -->
       <!-- Aqui começa a main -->
-       <div class="container">
-        <video src="img/background-main.mp4" autoplay loop muted></video>
-        <div class="overlay"></div>
-        <h1 id="title-main"></h1>
-        <button class="btn-main">Conheça nossos serviços</button>
-        <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-<div class="icons">
-  <i class="fas fa-truck">Caminão</i>
-  <i class="fas fa-box">Entrega</i>
-  <i class="fas fa-map-marked-alt">Contato</i>
-</div>
+        <div class="container">
+          <video src="img/background-main.1.mp4" autoplay loop muted></video>
+            <div class="overlay"></div>
+              <h1 id="title-main"></h1>
+              <button class="btn-main" id="scrollToCards">Conheça meus serviços</button>
+        </div>
+      <!-- Aqui termina a main -->
 
-       </div>
-       <!-- Aqui termina a main -->
-        <script src="./JS/js.js"></script>
+    <!-- Aqui começa a section cards -->
+    <section id="cards">
+        <h1 id="title-cards">Serviços oferecidos</h1>
+        <div class="card">
+          <h3>Transporte Tercerizado</h3>
+          <p>Oferecemos serviços de Transporte Tercerizado para empresas que buscam eficiência e economia em suas operações Logísticas. Meu caminhão moderno e um motorista experiente garante que suas cargas sejam entregues com segurança e pontualidade.</p>
+        </div>
+        <div class="card">
+          <h3>Transporte direto</h3>
+          <p>Um transporte corporativo de forma direta, sem intermediários. Toda a negociação e acompanhamento são realizados exclusivamente comigo. Isso garante agilidade, transparência e confiança no serviço prestado. Atuo com segurança, responsabilidade e foco nas necessidades de cada cliente. Sua carga é tratada de forma personalizada e profissional, do início ao fim.</p>
+        </div>
+        <div class="card">
+          <h3>Mudanças</h3>
+          <p>Temos um transporte seguro e organizado para mudanças de casas, apartamentos, escritórios e empresas. Nosso objetivo é garantir praticidade e tranquilidade durante todo o processo de mudança, cuidando dos seus pertences como se fossem nossos.</p>
+        </div>
+      </section>
+    <!-- Aqui termina a section cards -->
+
+      <script src="./JS/js.js"></script>
 </body>
 </html>
